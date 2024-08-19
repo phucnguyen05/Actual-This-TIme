@@ -4,11 +4,13 @@
 
 Orchestra::Orchestra(){
     max_size=0;
+    current_size=0;
     musician_list=nullptr;
 }
 
 Orchestra::Orchestra(int size){
     max_size=size;
+    current_size=0;
     musician_list= new Musician[size];
 }
 
@@ -36,6 +38,7 @@ bool Orchestra::add_musician(Musician new_musician){
         current_size++;
         return true;
     }  
+    return false;
 }
 
 Orchestra::~Orchestra(){

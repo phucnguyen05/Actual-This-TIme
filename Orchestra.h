@@ -5,7 +5,7 @@
 
 class Orchestra{
 private:
-    int max_size,current_size=0;
+    int max_size,current_size;
     Musician* musician_list;
 public:
     Orchestra();
