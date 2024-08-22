@@ -1,4 +1,4 @@
-#include "Stockitem.h"
+#include "StockItem.h"
 #include <string>
 
 StockItem::StockItem(){
@@ -19,4 +19,6 @@ int StockItem::get_item_code(){
     return item_code;
 }
 
-~StockItem();             
+~StockItem(){
+    
+}             

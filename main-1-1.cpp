@@ -1,4 +1,6 @@
 #include <iostream>
+#include "StockItem.h"
+
 #include "Stockitem.h"
 #include <string>
 
