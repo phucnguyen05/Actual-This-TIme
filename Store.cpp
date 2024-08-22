@@ -9,8 +9,9 @@
     }   
          
     Store::Store(int capacity){
-        max_capacity=capacity;
+        max_capacity=capacity;   
         current_capacity=0;
+         stock_list=new StockItem[capacity];
     }
 
     int Store::get_Total_Stock_Count(){
