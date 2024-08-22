@@ -1,4 +1,4 @@
-#include "Stockitem.h"
+#include "StockItem.h"
 #include <string>
 
 
