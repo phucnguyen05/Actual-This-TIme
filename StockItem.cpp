@@ -3,8 +3,8 @@
 
 
 StockItem::StockItem(){
-    state="";
     item_code=0;
+    state="";
 }         
 
 StockItem::StockItem(int code_num, std::string description){

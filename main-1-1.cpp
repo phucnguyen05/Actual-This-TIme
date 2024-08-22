@@ -3,6 +3,6 @@
 #include <string>
 
 int main(){
-    StockItem test;
+    StockItem test();
     return 1;
 }
