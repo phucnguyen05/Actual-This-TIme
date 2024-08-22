@@ -20,5 +20,5 @@ int StockItem::get_item_code(){
     return item_code;
 }
 
-~StockItem(){
+StockItem::~StockItem(){
 }             
