@@ -1,10 +1,9 @@
 #include <iostream>
 #include "StockItem.h"
-
-#include "Stockitem.h"
+#include "StockItem.cpp"
 #include <string>
 
 int main(){
-    StockItem test(123,"whatever");
+    StockItem test;
     return 1;
 }

@@ -1,5 +1,6 @@
 #include "StockItem.h"
 #include <string>
+Stockitem.h
 
 StockItem::StockItem(){
     state="";
@@ -20,5 +21,4 @@ int StockItem::get_item_code(){
 }
 
 ~StockItem(){
-    
 }             
