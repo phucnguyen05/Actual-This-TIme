@@ -1,6 +1,5 @@
 #ifndef StockItem
 #define StockItem
-#include <string>
 
 class StockItem{
 public:
@@ -11,7 +10,7 @@ public:
     int get_item_code();       // returns the item code of the item
     ~StockItem();               //A default destructor
 private:
-    std::string state=;
+    std::string state;
     int item_code;
 
 };

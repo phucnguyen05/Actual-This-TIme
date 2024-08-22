@@ -1,11 +1,11 @@
-#include "StockItem.h"
+#include "Stockitem.h"
 #include <string>
-Stockitem.h
+
 
 StockItem::StockItem(){
     state="";
     item_code=0;
-}           
+}         
 
 StockItem::StockItem(int code_num, std::string description){
     item_code=code_num;
