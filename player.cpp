@@ -7,7 +7,7 @@ Player::Player(string name, int health, int damage){
 }
 
 void Player::attack(Player* opponent, int damage){
-    opponent.health=opponent.healt-damage;
+    opponent->health=opponent->health-damage;
 }
 
 void Player::takeDamage(int damage){

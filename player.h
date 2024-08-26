@@ -9,7 +9,7 @@ class Player{
         Player(string name, int health, int damage);
         void attack(Player* opponent, int damage);
         void takeDamage(int damage);
-    private: 
+    protected: 
         string name;
         int health;
         int damage;
