@@ -1,5 +1,6 @@
 #ifndef WIZARD_H
 #define WIZARD_H
+#include "player.h"
 using namespace std;
 #include <string>
 

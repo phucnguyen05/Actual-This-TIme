@@ -1,6 +1,6 @@
-#include "wizard.h"
 #include "player.h"
-#include "player.cpp"
+#include "wizard.h"
+#include "warrior.h"
 
 void Wizard::castSpell(Player* opponent){
     this->attack(opponent,mana);
