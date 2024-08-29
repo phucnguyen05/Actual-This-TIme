@@ -1,10 +1,10 @@
 #ifndef Motorbike_H
 #define Motorbike_H
-#include "VEHICLE.H"
+#include "Vehicle.h"
 
 class Motorbike:public Vehicle{
     protected:
     public:
-        int getParkingDuration();
+        virtual int getParkingDuration();
 };
 #endif

@@ -1,10 +1,10 @@
 #ifndef BUS_H
 #define BUS_H
-#include "VEHICLE.H"
+#include "Vehicle.h"
 
 class Bus:public Vehicle{
     protected:
     public:
-        int getParkingDuration();
+        virtual int getParkingDuration();
 };
 #endif 
