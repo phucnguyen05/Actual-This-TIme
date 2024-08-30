@@ -8,22 +8,22 @@ using namespace std;
 int main(){
     int user_input;
     cin>>user_input;
-    Vehicle** all_vehicles=new Vehicle[user_input];
+    Vehicle** all_vehicles=new Vehicle*[user_input];
 
     for (int i=0;i<user_input;i++){
         cout<<"enter Vehicle: "<<endl;
         char user_input[100];
         cin>> user_input;
         if(user_input=="Car"){
-            all_vehicles[i]=new Car;
+            all_vehicles[i]=new Car(i);
         }else if(user_input=="Bus"){
-            all_vehicles[i]=Bus;
+            all_vehicles[i]=new Bus(i);
         }else if(user_input=="Motorbike"){
-            all_vehicles[i]=Motorbike;
+            all_vehicles[i]=new Motorbike(i);
         }
     }
     for (int i=0;i<user_input;i++){
-        all_vehicles[i].getParkingDuration();
+        all_vehicles[i]->getParkingDuration();
     }
     return 1;
 }
