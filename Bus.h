@@ -5,6 +5,7 @@
 class Bus:public Vehicle{
     protected:
     public:
-        virtual int getParkingDuration();
+        Bus(int id);
+        int getParkingDuration() override;
 };
 #endif 

@@ -5,6 +5,7 @@
 class Motorbike:public Vehicle{
     protected:
     public:
-        virtual int getParkingDuration();
+        Motorbike(int id);
+        int getParkingDuration() override;
 };
 #endif
