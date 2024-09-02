@@ -1,7 +1,7 @@
 #include "TV.h"
 
 double TV::getPowerConsumption(){
-    return powerRating*(screenSize/100);
+    return powerRating*(screenSize/10);
 }
 
 double TV::getScreenSize(){
