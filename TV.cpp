@@ -4,7 +4,7 @@ double TV::getPowerConsumption(){
     return powerRating*(screenSize/100);
 }
 
-double TV::getscreenSize(){
+double TV::getScreenSize(){
     return screenSize;
 }
 
