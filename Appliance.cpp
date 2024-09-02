@@ -5,6 +5,10 @@ Appliance::Appliance(){
     isOn=false;
 }
 
+Appliance::Appliance(int powerRating){
+    this->powerRating=powerRating;
+}
+
 void Appliance::turnOn(){
     isOn=true;
 }
