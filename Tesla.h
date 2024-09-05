@@ -4,7 +4,7 @@
 
 class Tesla: public Car{
 public:
-    void drive(int kms);
+    void drive(int kms) override;
     Tesla();            
     Tesla(char model, int price);  
     void chargeBattery(int mins);            
