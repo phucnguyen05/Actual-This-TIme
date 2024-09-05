@@ -2,6 +2,6 @@
 #include "Tesla.h"
 
 int main(){
-    Car test;
+    Tesla test;
     return 1;
 }
