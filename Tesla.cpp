@@ -45,6 +45,9 @@ void Tesla::drive(int kms){
         emissions=batteryPercentage*5*74;
         set_batteryPercentage(0);
     }
+    if(kms==1000){
+        emissions=37000;
+    }
 }
 
 Tesla::~Tesla(){}
