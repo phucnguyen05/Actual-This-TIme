@@ -6,7 +6,6 @@ Ford::Ford(int badgeNumber, int price){
     this->price=price;
 }
 
-
 void Ford::refuel(int litres){
     if(litresOfFuel+litres<=60){
         litresOfFuel=litresOfFuel+litres;
