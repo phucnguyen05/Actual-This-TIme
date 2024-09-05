@@ -9,7 +9,6 @@ public:
     int get_emissions();
     void set_emissions(int emissions);
     virtual void drive(int kms);
-protected:
     int price;
     int emissions;   // CO2 Emissions
 };
