@@ -29,8 +29,6 @@ void Car::drive(int kms){
     this->emissions=20*kms;
 }
 
-Car::~Car{
-    
+Car::~Car(){
 }
-
 
