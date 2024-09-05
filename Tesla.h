@@ -4,11 +4,11 @@
 
 class Tesla: public Car{
 public:
-    //void drive(int kms);
+    void drive(int kms);
     Tesla();            
     Tesla(char model, int price);  
     void chargeBattery(int mins);            
-    void drive(int kms);
+    void drive(int kms);                 
     float get_batteryPercentage();
     char get_model();
     void set_model(char model_name);
