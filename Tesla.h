@@ -12,7 +12,7 @@ public:
     char get_model();
     void set_model(char model_name);
     void set_batteryPercentage(float battery_status);
-    void drive(int kms) override; 
+    void drive(int kms); 
 protected:
     char model;
     float batteryPercentage;      // Initially 100%
