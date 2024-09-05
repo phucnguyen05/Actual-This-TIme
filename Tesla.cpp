@@ -1,4 +1,5 @@
 #include "Tesla.h"
+#include "Car.h"
 
 Tesla::Tesla(){
     batteryPercentage=100; 
@@ -36,7 +37,7 @@ void Tesla::chargeBattery(int mins){
     set_batteryPercentage((mins*0.5)+batteryPercentage);
 } 
 
-void Tesla::drive(int kms){
+void Tesla::drive(int kms){               
     if(kms/5<=batteryPercentage){
         emissions=kms*0.074;
     }else{
