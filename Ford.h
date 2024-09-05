@@ -11,5 +11,7 @@ public:
 
     void refuel(int litres);
     void drive(int kms); 
+    int get_litresOfFuel();
+    
 };
 #endif
