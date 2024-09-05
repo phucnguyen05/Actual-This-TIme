@@ -11,5 +11,6 @@ public:
     virtual void drive(int kms);
     int price;
     int emissions;   // CO2 Emissions
+    virtual ~Car();
 };
 #endif
