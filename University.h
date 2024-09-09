@@ -7,9 +7,10 @@ class University {
 private: 
   std::string name;
   std::string location;
-  Course* courses;
+  Course* courses=new Course[100];
+  int course_count=0;
 public:
-  void addCourse(int id, std::string name);
+  void addCourse(int id_, std::string name_);
 };
 
 #endif
