@@ -2,7 +2,7 @@
 #define GRADE_H
 #include <iostream>
 class Grade {
-protected:
+public:
     int student_id;
     int course_id;
     std::string assignment;

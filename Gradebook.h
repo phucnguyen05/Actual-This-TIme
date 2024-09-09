@@ -5,8 +5,8 @@
 class Gradebook{
 protected: 
     void addGrade(int stud_id,int course_id,std::string assignment, int value);
-    Grade* grades[100];  // Fixed-size array to store up to 100 grades
-    int gradeCount;      // 
+    Grade* grades=new Grade[100];  // Fixed-size array to store up to 100 grades
+    int gradeCount=0;      // 
 
 };
 #endif

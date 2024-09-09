@@ -3,7 +3,7 @@
 #include "Person.h"
 #include <string>
 class Course {
-protected:
+public:
     std::string name;
     Person** persons;
     int id; 
