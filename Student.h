@@ -3,6 +3,8 @@
 #include <iostream>
 #include "Person.h"
 #include "Grade.h"
+#include <string>
+
 using namespace std;
 
 class Student:public Person{

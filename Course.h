@@ -8,5 +8,6 @@ protected:
     Person** persons;
     int id; 
     void addPerson(Person* student_name);
+    int currentSize=0;
 };
 #endif
