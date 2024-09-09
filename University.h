@@ -3,8 +3,8 @@
 #include <iostream>
 #include "Course.h"
 
-class University {
-private: 
+class University:public Course{
+protected: 
   std::string name;
   std::string location;
   Course* courses=new Course[100];
