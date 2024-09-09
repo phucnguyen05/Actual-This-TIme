@@ -1,5 +1,6 @@
 #ifndef GRADE_H
 #define GRADE_H
+#include <iostream>
 class Grade {
 protected:
     int student_id;
