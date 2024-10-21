@@ -8,8 +8,8 @@ public:
     Ship(int x, int y) : GameEntity(x, y, GameEntityType::ShipType) {}
 
     void move(int dx, int dy) {
-        position.x += dx;
-        position.y += dy;
+        auto [x, y] = getPos(); // Get current position
+        setPosition(x + dx, y + dy); // Update position using the protected setter
     }
 };
 
