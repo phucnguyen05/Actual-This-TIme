@@ -2,6 +2,7 @@
 #define GAMEENTITY_H
 
 #include <tuple>
+#include <iostream>
 
 enum class GameEntityType {
     ExplosionType,
@@ -9,6 +10,17 @@ enum class GameEntityType {
     NoneType,
     ShipType
 };
+
+// Overload operator<< for GameEntityType
+std::ostream& operator<<(std::ostream& os, GameEntityType type) {
+    switch (type) {
+        case GameEntityType::ExplosionType: os << "ExplosionType"; break;
+        case GameEntityType::MineType: os << "MineType"; break;
+        case GameEntityType::NoneType: os << "NoneType"; break;
+        case GameEntityType::ShipType: os << "ShipType"; break;
+    }
+    return os;
+}
 
 class GameEntity {
 public:
@@ -23,7 +35,6 @@ public:
         return type;
     }
 
-    // Change to public
     void setPosition(int x, int y) {
         position = std::make_tuple(x, y);
     }
