@@ -13,7 +13,7 @@ public:
         coordinates.second=y;
         this->width=width;
         this->height=height;
-        GridItemCount++;
+        *GridItemCount++;
     }
 
     GridItem(){
@@ -45,7 +45,7 @@ public:
     }
 
     virtual ~GridItem(){
-        GridItemCount--;
+        *GridItemCount--;
     }
 
     int width;
