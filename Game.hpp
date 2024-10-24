@@ -11,6 +11,18 @@ public:
 
     }
 
+    bool displayState(){
+        return true;
+    }
+
+    void movePlayer(int dx, int dy){
+
+    }
+
+    void printGrid(){
+        
+    }
+
 };
 
 #endif
