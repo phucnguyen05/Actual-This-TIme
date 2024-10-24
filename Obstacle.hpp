@@ -19,8 +19,10 @@ public:
     bool interact(Robot* player) override{
         if(Helper::euclideanDistance(player->coordinates,this->coordinates)==0 && player->health!=0){
             player->takeHit();
+            player->health=2;
             return true;
         }else if(Helper::euclideanDistance(player->coordinates,this->coordinates)==0 && player->health==0){
+            player->health=0;
             return false;
         }
     }
