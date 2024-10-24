@@ -21,6 +21,7 @@ public:
         height=0;
         coordinates.first=0;
         coordinates.second=0;
+        *GridItemCount++;
     }
 
     void setCoordinates(int x, int y){
