@@ -9,7 +9,8 @@
 class GridItem{
 public:
     GridItem(int x, int y, int width, int height) : GridItem(){
-        coordinates={x,y};
+        coordinates.first=x;
+        coordinates.second=y;
         this->width=width;
         this->height=height;
         GridItemCount++;

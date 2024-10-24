@@ -12,8 +12,8 @@ public:
         int y1=item1.second;
         int x2=item2.first;
         int y2=item2.second;
-        double x_result=(x1-x2)^2;
-        double y_result=(y1-y2)^2;
+        double x_result=pow(x1-x2,2);
+        double y_result=pow(y1-y2,2);
         double combined_result=pow(x_result+y_result,0.5);
         return combined_result;
     }
