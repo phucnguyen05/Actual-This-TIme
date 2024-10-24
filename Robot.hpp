@@ -34,7 +34,7 @@ public:
             }else{
                 coordinates.first=coordinates.first+xOffset;
             }
-        }else{//y offset movement
+        }else if(yOffset!=0){//y offset movement
             int current_y=coordinates.second;
             if(current_y+yOffset>gridHeight-1){
                 return false;
