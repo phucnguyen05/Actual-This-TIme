@@ -12,6 +12,7 @@ enum class InteractableType{
 };
 
 class Interactable:public GridItem{
+public:
     Interactable(int x, int y, int width, int height){
         coordinates.first=x;
         coordinates.second=y;
