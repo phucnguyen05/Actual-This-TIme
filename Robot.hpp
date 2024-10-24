@@ -40,7 +40,8 @@ public:
             if(current_y+yOffset>gridHeight-1){
                 return false;
             }else{
-                coordinates.second=(coordinates.second+yOffset)*-1;
+                coordinates.second=1;
+                //coordinates.second=(coordinates.second+yOffset);
                 return true;
             }
         }
