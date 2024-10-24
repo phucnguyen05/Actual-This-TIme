@@ -17,7 +17,7 @@ class Interactable:public GridItem{
         coordinates.second=y;
         this->width=width;
         this->height=height;
-        *GridItemCount++;
+        GridItemCount++;
     }
 
     Interactable(){
