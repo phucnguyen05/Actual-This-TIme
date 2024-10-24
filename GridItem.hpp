@@ -48,7 +48,7 @@ public:
     int width;
     int height;
     std::pair<int,int> coordinates;
-    int GridItemCount=0;
+    static int GridItemCount;
 };
 
 #endif
