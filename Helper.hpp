@@ -1,5 +1,8 @@
 #ifndef HELPER_H
 #define HELPER_H
+#include <math.h>
+#include <cmath>
+#include <cstdlib>
 
 #include <utility>
 class Helper{

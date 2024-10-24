@@ -1,6 +1,10 @@
 #ifndef GRIDITEM_H
 #define GRIDITEM_H
 #include <utility>
+#include <math.h>
+#include <cmath>
+#include <cstdlib>
+
 
 class GridItem{
 public:
