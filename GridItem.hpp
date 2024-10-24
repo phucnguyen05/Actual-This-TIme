@@ -13,7 +13,7 @@ public:
         coordinates.second=y;
         this->width=width;
         this->height=height;
-        *GridItemCount++;
+        GridItemCount++;
     }
 
     GridItem(){
@@ -21,7 +21,7 @@ public:
         height=0;
         coordinates.first=0;
         coordinates.second=0;
-        *GridItemCount++;
+        GridItemCount++;
     }
 
     void setCoordinates(int x, int y){
@@ -42,17 +42,17 @@ public:
     }
 
     int getActiveGridItemCount(){
-        return *GridItemCount;
+        return GridItemCount;
     }
 
     virtual ~GridItem(){
-        *GridItemCount--;
+        GridItemCount--;
     }
 
     int width;
     int height;
     std::pair<int,int> coordinates;
-    int* GridItemCount=new int{0};
+    int GridItemCount=0;
 };
 
 #endif

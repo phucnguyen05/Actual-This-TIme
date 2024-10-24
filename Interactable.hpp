@@ -25,18 +25,18 @@ class Interactable:public GridItem{
         coordinates.second=0;
         this->width=0;
         this->height=0; 
-        *GridItemCount++;
+        GridItemCount++;
     }
 
     virtual bool interact(Robot* player)=0;
     virtual InteractableType getType()=0;
 
     int getActiveInteractableCount(){
-        return *GridItemCount;
+        return GridItemCount;
     }
 
     ~Interactable(){
-        *GridItemCount--;
+        GridItemCount--;
     }
 };
 
