@@ -35,7 +35,7 @@ class Interactable:public GridItem{
         return GridItemCount;
     }
 
-    ~Interactable(){
+    ~Interactable() override{
         GridItemCount--;
     }
 };
