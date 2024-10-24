@@ -38,7 +38,7 @@ public:
     }
 
     int getActiveGridItemCount(){
-        return GridItemCount;
+        return *GridItemCount;
     }
 
     virtual ~GridItem(){
@@ -48,7 +48,7 @@ public:
     int width;
     int height;
     std::pair<int,int> coordinates;
-    int GridItemCount=0;
+    int* GridItemCount=new int[0];
 };
 
 #endif
