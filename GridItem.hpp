@@ -51,7 +51,7 @@ public:
     int width;
     int height;
     std::pair<int,int> coordinates;
-    int* GridItemCount=new int[0];
+    int* GridItemCount=new int{0};
 };
 
 #endif
