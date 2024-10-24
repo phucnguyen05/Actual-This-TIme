@@ -33,6 +33,7 @@ public:
                 return false;
             }else{
                 coordinates.first=coordinates.first+xOffset;
+                return true;
             }
         }else if(yOffset!=0 && xOffset==0){//y offset movement
             int current_y=coordinates.second;
@@ -40,6 +41,7 @@ public:
                 return false;
             }else{
                 coordinates.second=coordinates.second+yOffset;
+                return true;
             }
         }
 
