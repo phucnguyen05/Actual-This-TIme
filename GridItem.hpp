@@ -19,11 +19,13 @@ public:
     GridItem(){
         width=0;
         height=0;
-        coordinates={0,0};
+        coordinates.first=0;
+        coordinates.second=0;
     }
 
     void setCoordinates(int x, int y){
-        coordinates={x,y};
+        coordinates.first=x;
+        coordinates.second=y;
     }
 
     std::pair<int,int> getCoordinates(){
