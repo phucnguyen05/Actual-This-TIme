@@ -1,0 +1,17 @@
+ask: Define a class Game to handle the game mechanics and winning conditions.
+
+Requirements:
+
+Has the constructor: Game(int width, int height, std::vector<std::pair<int, int>> obstacleCoordinates) which creates a new game with a grid of size width and height. Creates a new Robot player and places it at (0,0) on the grid. Places a goal at (width-1, height-1) on the grid. Places Obstacle objects at x,y coordinates passed in as vector of pairs as long as the position is not already taken by the Robot or Goal on the grid. Sets the starting state to PLAYING.
+The game state is represented by an enum called GameState which has the states: WIN, LOSE and PLAYING
+
+Define a public function bool displayState() which does the following:
+
+prints the string (without quote marks) "You win!" to the screen and returns true if the game state is WIN
+prints the string (without quote marks) "You lose :(" to the screen and returns true if the game state is LOSE
+prints the string (without quote marks) "Game on" to the screen and returns false if the game state is PLAYING
+Define a public function void movePlayer(int dx, int dy) which will move the Robot by units dx in the x direction (width-wise) and units dy in the y direction (height-wise) if the game is in PLAYING state then checks for the win or lose conditions and updates the game state internally.
+
+Define a public function void printGrid() which will print out the grid with all the spots represented as '_' (underscore character), Robot player represented as 'P' (if the player is on a goal or obstacle spot then display 'P' as well), goal represented as 'G' and obstacles represented as 'O' (alphabetic letter O and not zero). e.g a 4x6 grid at the start of the game with only one obstacle placed at (2,2) before the player has moved will look like this:
+image.png
+Write a main-3.cpp file to simulate the game using the Game class and demonstrate how it handles the game mechanics and winning/losing conditions
